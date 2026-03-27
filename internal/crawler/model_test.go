@@ -741,8 +741,6 @@ func TestFetchWithCacheTTLWithExtraNormalization(t *testing.T) {
 		srv.Close()
 	})
 
-	// hint: see path.Clean and url.Parse
-
 	urls1 := []string{
 		srv.URL + "/a%2Fb?1=hello&2=ohhh",
 	}

@@ -89,7 +89,6 @@ func (c *crawlerImpl) ListenAndServe(ctx context.Context, address string) error 
 		defer cancel()
 
 		if err := srv.Shutdown(shutdownCtx); err != nil {
-			// We can join errors
 			log.Printf("http server shutdown error: %v", err)
 		}
 	}()
